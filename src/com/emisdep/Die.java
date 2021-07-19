@@ -1,21 +1,19 @@
 package com.emisdep;
 
-import java.util.Random;
-
 public class Die {
-    private int value;
-    private int sides = 6;
-
+    public int numberOfSides;
+    public int faceUpValue;
 
     public Die() {
-        value = 1;
+        numberOfSides = 6;
     }
 
-    public void roll(Random rand){
-        value = rand.nextInt(sides) + 1;
+    public Die(int numberOfSides) {
+        this.numberOfSides = numberOfSides;
     }
 
-    public int getValue(){
-        return value;
+    public void roll() {
+        faceUpValue = (int) ((Math.random() * numberOfSides) + 1);
     }
+
 }
