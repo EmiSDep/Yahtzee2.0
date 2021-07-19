@@ -56,7 +56,7 @@ public class Main {
 
         } while (didWin);
 
-        System.out.printf("Win count : %d", winCounter);
+        System.out.println("Win count : " + winCounter);
     }
 
 }
